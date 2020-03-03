@@ -1,9 +1,10 @@
 # TechPass User Doc Repository
 This is a documentation repository for TechPass.
 
+> The repository is currently in active development and  contents will change rapidly.
+
 ## Contributing
-Any commits into master branch will be directly published to the documentation portal in developers' portal.
-If your doc is a work in progress, please branch off, complete your work and merge back when you are ready.
+Please create a new branch or fork the repository, make your changes and submit a PR.
 
 For instructions on how to use docsify, please consult [docsify documentation](https://docsify.js.org/#/?id=docsify).
 

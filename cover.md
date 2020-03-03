@@ -1,12 +1,12 @@
-![logo](assets/images/logo.svg)
+![logo](assets/images/logo.svg ':size=99%')
 
 # **Welcome to TechPass Documentation**
 
-> Single-Sign-On Solution for WoG Developer Toolchain
+> Identity & Access Management Solution for WoG Developer Toolchain
 
-This technical guide is meant for TechPass tenants.
+All you need is one identity.
 
-[GitHub](https://github.com/seng-siong/techpass-user-docs)
+[Portal](https://portal.dev.techpass.gov.sg)
 [Get Started](./home)
 
 ![color](#FFFFFF)
