@@ -1,3 +1,2 @@
 - [Getting Started](quickstart)
 - [TechPass Tenants](tenant)
-- [OTPaaS](otpaas)
