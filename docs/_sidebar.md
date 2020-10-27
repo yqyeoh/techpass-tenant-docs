@@ -1,2 +1,2 @@
 - [Getting Started](quickstart)
-- [TechPass Tenants](tenant)
+- [Tenant Namespaces](namespace)

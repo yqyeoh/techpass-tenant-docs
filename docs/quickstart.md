@@ -31,4 +31,4 @@ If your service falls under this category and wants to use TechPass as an IAM so
 
 ## Already a Tenant?
 
-You can start managing your Tenant Namespace via [TechPass Portal](https://portal.techpass.gov.sg) on your GSIB device. Refer to [Managing Tenants](tenant) section for detailed guides on how to perform these workflows.
+You can start managing your Tenant Namespace via [TechPass Portal](https://portal.techpass.gov.sg) on your GSIB device. Refer to [Tenant Namespace](workspace) section for detailed guides on how to perform these workflows.
