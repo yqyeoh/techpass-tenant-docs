@@ -1,2 +1,3 @@
 - [Getting Started](quickstart)
 - [Tenant Namespaces](namespace)
+- [Profile] (profile)
