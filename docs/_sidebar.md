@@ -2,6 +2,6 @@
 - [Roles](roles)
 - [Profile](profile)
 - [Tenant Namespaces](namespace)
-- [Configuring Webhooks](webhook)
+- [Configuring Webhooks](webhooks)
 - [Automation APIs](apis)
 - [Resources](resources)
