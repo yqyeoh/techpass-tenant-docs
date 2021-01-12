@@ -1,2 +1,7 @@
 - [Getting Started](quickstart)
+- [Roles](roles)
+- [Profile](profile)
 - [Tenant Namespaces](namespace)
+- [Configuring Webhooks](webhook)
+- [Automation APIs](apis)
+- [Resources](resources)
