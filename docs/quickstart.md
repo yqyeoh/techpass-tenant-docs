@@ -15,9 +15,10 @@ If you have yet to set up your WoG cloud account, please see [here]().
 
 To setup your TechPass Account:
 
-![signup](assets/images/quickstart/signup.png)
-
 1. Visit our TechPass portal home page and click ***Sign Up***.
+   
+   ![signup](assets/images/quickstart/signup.png)
+
 2. Key in your valid gov.sg email. An *invitation email* will be sent for your acceptance.
 3. Click the link on the email to start the sign up process.
 4. Key in your verification code that you have setup with your WoG cloud account. If you have yet to set up your WoG cloud account, click [here]() to set up.
@@ -47,13 +48,3 @@ You will need to inform your project manager or manager-in-charge. They will wor
    Scan the QR code to setup the account on your authenticator. Once scanned, click ***Next*** and set up is done.
    
    ![appstore](assets/images/quickstart/MSAuthStore.png)
-
-## Signing up as a Tenant of TechPass
-
-TechPass is only available for services within the Singapore Government Technology Stack (SGTS).
-
-If your service falls under this category and wants to use TechPass as an IAM solution, please contact the [TechPass team](mailto:enquires_techpass@tech.gov.sg).
-
-## Already a Tenant?
-
-You can start managing your Tenant Namespace via [TechPass Portal](https://portal.techpass.gov.sg) on your GSIB device. Refer to [Tenant Namespace](workspace) section for detailed guides on how to perform these workflows.
