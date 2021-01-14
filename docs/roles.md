@@ -9,7 +9,7 @@ As a user, you will be given access your [Profile]() in TechPass portal. You wil
 All users are given this role by default.
 
 ## Tenant
-As a tenant, you can start managing your Tenant Namesapce via TechPass portal on your GSIB device. Refer to [Tenant Namespace]() for detailed guides on how to perform various workflows.
+SGTS services that are using TechPass services are called tenants. Tenants have access to features that allows them to consume services offered by TechPass. Refer to [Namespaces](namespace) for detailed guides on what you can do within a Tenant Namespace.
 
 ## Switching Roles
 To switch roles, click on your name at the top right corner of the TechPass console after when you sign in and select the role that you wish to switch to.
