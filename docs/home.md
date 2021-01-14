@@ -13,5 +13,3 @@ TechPass is powered by [Microsoft Azure AD service](https://azure.microsoft.com/
 
 TechPass utilises popular open standards such as, [OAuth 2.0](https://oauth.net/2/) / [OIDC](https://openid.net/connect/) (OpenID Connect) and [SAML 2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) (Security Assertion Markup Language), to perform authentication, authorization and access control.
 
-**References**
-
