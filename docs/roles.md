@@ -1,5 +1,5 @@
 # Roles
-Roles helps us identify the appropriate features that should be given to a TechPass user.
+Roles helps us identify the appropriate features that should be given to a TechPass user. A user can be given for more than one role but he/she can only assume 1 role at any given time. To switch to a different role, see [Switching Roles](#switching-roles).
 
 All users are will be given the "*User*" role by default.
 
