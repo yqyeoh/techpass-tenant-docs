@@ -25,11 +25,11 @@ To setup your TechPass Account:
 5. Read and click ***Accept*** to the *Review Permissions* Terms and Conditions.
 6. You will then be required to setup your 2FA using *Microsoft Authenticator* on your mobile. Follow the instructions on the screen to complete your first time setup.
    
-   ![setup2FA](assets/images/quickstart/setup2FA.png)
+   ![setup2FA](assets/images/quickstart/setup_2FA.png)
 
 7. Once your authenticator is configured successfully, you should get a notification on your mobile phone whenever 2FA is required. Click ***Approve*** to verify your sign in.
 
-   ![approve2FA](assets/images/quickstart/approve2FA.png)
+   ![approve2FA](assets/images/quickstart/approve_2FA.png)
 
 ### Verified Vendors/Contractors working on Gov ICT Projects
 
@@ -47,7 +47,7 @@ You will need to inform your project manager or manager-in-charge. They will wor
 
 4. Click ***+ Add Method*** and add ***Authenticator App*** from the drop-down bar.
 
-   ![setupWoG](assets/images/quickstart/setupWoG.png)
+   ![setupWoG](assets/images/quickstart/setup_WoG.png)
 
 5. On your authenticator app, click on ***Add an Account***, and select ***Work or School***.
    Scan the QR code to setup the account on your authenticator. Once scanned, click ***Next*** and set up is done.

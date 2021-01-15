@@ -14,4 +14,4 @@ SGTS services that are using TechPass services are called tenants. Tenants have 
 ## Switching Roles
 To switch roles, click on your name at the top right corner of the TechPass console after when you sign in and select the role that you wish to switch to.
 
-![switchrole](assets/images/switchrole.png)
+![switchrole](assets/images/switch_role.png)
