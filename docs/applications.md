@@ -3,7 +3,7 @@
 ## Overview
 Client applications (or client apps) are namespace objects that represent a single tenant service that is integrated with TechPass AAD. Client Apps describes the tenant service to TechPass AAD and contains properties that define how TechPass AAD should interact with them. 
 
-## Client App Properties
+## Properties
 ?> Some of these properties will only appear after the Client App has been created.
 
 ### Application ID
@@ -41,7 +41,7 @@ Unchecking this field will disable ALL user sign in to the tenant service.
 ### User Assignment Required
 This properties determines if a user needs to be granted access before he/she is allowed to sign into your app. Leaving this field uncheck means that **ALL** TechPass users will be able to sign into your app.
 
-!> Careful consideration is required if you wish the alter the value of this field.
+!> Careful consideration is required if you wish the alter the value of this field. Find out more about to how design your [Access Model](resources#concepts) with TechPass.
 
 If you left this field checked, you will need to grant access to users that you want to allow into your app. See [Assigning Access to your App](#assigning-access-to-your-app) for more info.
 
@@ -66,4 +66,13 @@ A list of users and/or user groups that has been granted permission to sign in t
 
 ![create_app](assets/images/application/app_create.png)
 
-## Assigning Access to your App
+## Managing Access to your App
+If you did not disable [User Assignment Required](user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned). 
+
+#### Adding a User or Group
+1. In the Assign Role section, click on '+'.
+2. Key in the a search phrase to locate the user or group.
+3. Click on the '+' sign on the right of the user/group. It should then appear on the *Selected Groups/Users* list.
+4. Click on ***Update***. 
+
+### Removing a User or Group 
