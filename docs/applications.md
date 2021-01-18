@@ -1,16 +1,19 @@
 # Client Applications
 
 ## Overview
-Client applications (or client apps) are namespace objects that represent a single tenant service that is integrated with TechPass AAD. Client Apps describes the tenant service to TechPass AAD and contains properties that define how TechPass AAD should interact with them. 
+Client applications or application (or simply apps) are namespace objects that represent a single tenant service that is integrated with TechPass AAD. Apps describes the tenant service to TechPass AAD and contains properties that define how TechPass AAD should interact with them. 
 
 ## Properties
 ?> Some of these properties will only appear after the Client App has been created.
 
 ### Application ID
-The ID of the Client App. This is used to identify your tenant service to TechPass AAD during a HTTP request.
+The ID of the App. This is used to identify your tenant service to TechPass AAD during a HTTP request.
 
 ### Directory ID
 The directory ID of TechPass AAD tenant with Microsoft's Azure AD SaaS. This allows the authentication endpoints to identify that the requests should be directed to TechPass AAD.
+
+### Common Endpoints
+This drawer popup contains the URLs for needed for using the Auth Code grant and Implicit Grant flows. Remember to replace the values in square brackets.
 
 ### Owners
 A list of users that are has the permission to make changes to the Client App properties, which should typically be the administrators of the Tenant Namespace.
@@ -60,7 +63,7 @@ The secret key is used by tenant services to authenticate itself to TechPass AAD
 ### Assigned Users and Groups
 A list of users and/or user groups that has been granted permission to sign in to your tenant service. If you add a user group, ALL users within that group will be granted permission. 
 
-## Registering a Client App
+## Registering an App
 1. On the applications tab within a namespace, click on the '***+ Create***' button.
 2. Fill up the required information marked with '*' and click ***Submit***.
 
@@ -70,9 +73,13 @@ A list of users and/or user groups that has been granted permission to sign in t
 If you did not disable [User Assignment Required](user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned). 
 
 #### Adding a User or Group
-1. In the Assign Role section, click on '+'.
-2. Key in the a search phrase to locate the user or group.
-3. Click on the '+' sign on the right of the user/group. It should then appear on the *Selected Groups/Users* list.
-4. Click on ***Update***. 
+1. In the *Assigned Users and Groups* section, click on ***+ Add Users or Groups***.
+2. In the *Assign Role* screen, click on '+' sign next to ***Users and Groups***.
+3. Key in the a search phrase to locate the user or group.
+4. Click on the '+' sign on the right of the user/group. It should then appear on the *Selected Groups / Users* list.
+5. Click on ***Submit*** to effect the change. 
 
 ### Removing a User or Group 
+1. Check the box next to the user/group in the *Assigned Users and Groups* section.
+2. Click on ***x Remove Selected.***
+3. Click on ***Submit*** to effect the change.

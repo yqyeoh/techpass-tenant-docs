@@ -2,7 +2,7 @@
 - [Your Profile](profile)
 - [Roles](roles)
 - [Namespaces](namespaces)
-- [Client Apps](applications)
+- [Applications](applications)
 - [Groups](groups)
 - [Vendors](vendors)
 - [Webhooks](webhooks)

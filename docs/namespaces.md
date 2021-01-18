@@ -42,8 +42,8 @@ Besides updating your namespace's info, you can also manage the user(s) that are
 
 ## Namespace Objects
 As a tenant of TechPass, you are granted access to our many features. You can use these features to create objects to help you:
-- integrate your services with TechPass AAD. ([Client Apps](applications))
-- manage your user access and permissions. ([Client Apps](applications) and [Groups](groups))
+- integrate your services with TechPass AAD. ([Applications](applications))
+- manage your user access and permissions. ([Applications](applications) and [Groups](groups))
 - onboard users onto your services. ([Vendors](vendors) and [APIs](apis))
 - get notified of system events. ([Webhooks](webhooks))
 
