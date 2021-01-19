@@ -16,8 +16,6 @@ You will see the Display Name, Description of the namespace and a directory ID. 
 
 You can update a namespace's *Display Name* and *Description* here. These information will be useful to help other TechPass users know what your product is about.
 
-![namespace_edit](assets/tenant_namespace_edit.gif)
-
 ## Managing Tenant Admins
 Besides updating your namespace's info, you can also manage the user(s) that are authorised to manage the current namespace. To update the list of admins, click on the ***Edit*** button in the *Admins* section.
 

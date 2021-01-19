@@ -69,10 +69,16 @@ A list of users and/or user groups that has been granted permission to sign in t
 
 ![create_app](assets/images/application/app_create.png)
 
-## Managing Access to your App
-If you did not disable [User Assignment Required](user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned). 
+## Deleting a Registered App
+!> Deleting an app is a **irreversible** change. Please consider carefully!
 
-#### Adding a User or Group
+1. Click on the '*dustbin*' icon to the right of the app.
+2. Click on ***Confirm***.
+
+## Managing Access to your App
+?> If you did not disable [User Assignment Required](#user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned). 
+
+### Adding a User or Group
 1. In the *Assigned Users and Groups* section, click on ***+ Add Users or Groups***.
 2. In the *Assign Role* screen, click on '+' sign next to ***Users and Groups***.
 3. Key in the a search phrase to locate the user or group.

@@ -12,7 +12,13 @@
 </head>
 <body>
     <div id="app"></div>
+    <!-- 1. Import mermaid.js, BEFORE the window.$docsify initialisation -->
+    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
+        // 2. Add the two lines below before declaring the window.$docsify object:
+        var num = 0;
+        mermaid.initialize({ startOnLoad: false });
+
         window.$docsify = {
             auto2top: true,
             basePath: '/docs/',
@@ -24,6 +30,20 @@
             maxLevel: 4,
             name: 'TechPass Documentation',
             subMaxLevel: 2,
+            markdown: {
+                renderer: {
+                    code: function (code, lang) {
+                    if (lang === "mermaid") {
+                        return (
+                        '<div class="mermaid">' +
+                        mermaid.render("mermaid-svg-" + num++, code) +
+                        "</div>"
+                        );
+                    }
+                    return this.origin.code.apply(this, arguments);
+                    },
+                },
+            },
         }
     </script>
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
