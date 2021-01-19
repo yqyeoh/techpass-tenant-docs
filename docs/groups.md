@@ -4,8 +4,7 @@ The Group is collection of users. Groups allow you to specify permissions for mu
 
 Any users assigned in a specific group automatically has the permissions that are assigned  to the group.
 
-   ?>A group can contain many users, and a user can belong to multiple groups
-   ?>You may create up to 50 group(s)
+A group can contain many users, and a user can belong to multiple groups.
 
 ## Creating a User Group
 1. To create user group, click on **Create**.
