@@ -7,4 +7,5 @@
 - [Vendors](vendors)
 - [Webhooks](webhooks)
 - [APIs *(Coming Soon)*](apis)
+- [Concepts](concepts)
 - [Resources](resources)
