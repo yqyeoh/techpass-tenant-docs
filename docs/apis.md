@@ -1,3 +1,3 @@
 # Automation APIs
 
-*Feature is coming soon. Watch out for this space!*
+[a link](https://stg.docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/)

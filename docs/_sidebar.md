@@ -6,6 +6,6 @@
 - [Groups](groups)
 - [Vendors](vendors)
 - [Webhooks](webhooks)
-- [APIs *(Coming Soon)*](apis)
+- [APIs](apis)
 - [Concepts](concepts)
 - [Resources](resources)
