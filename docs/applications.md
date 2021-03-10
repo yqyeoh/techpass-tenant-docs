@@ -89,3 +89,55 @@ A list of users and/or user groups that has been granted permission to sign in t
 1. Check the box next to the user/group in the *Assigned Users and Groups* section.
 2. Click on ***x Remove Selected.***
 3. Click on ***Submit*** to effect the change.
+
+## Reviewing Access to your App
+
+Every quarter, starting from your application creation date, all Tenant Administrators will receive an email asking to review users' access to your application.
+
+The purpose of this review is to ensure that you as a Tenant Administrator make sure only the right people have continued access to your application.
+
+### Steps to review your App
+
+1. You will receive an email asking you to review access. An example of an email is as follow:
+![Access Review Email](assets/images/application/accessreview_invitation.png)
+
+2. Click on 'Start Review' link.
+
+3. Select Access reviews from the menu on the left side bar to see a list of pending access reviews assigned to you.
+
+4. Click on the name of an access review to get started.
+
+5. You can select any of the decisions for a user
+
+- Approve: User will continue to have access to your application.
+- Deny: User will not have access to your application once the decision is applied at the end of the review.
+- Don't Know (Not reccommended): If you are unsure, you can select this option. User gets to keep their access.
+- Accept Recommendation: You can choose to accept Microsoft's Recommendation.
+
+Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
+
+### Frequently Asked Questions
+
+#### Q: How long will the review last?
+
+A: The review will last for 14 days and reoccur every quarter till your application is deleted.
+
+#### Q: Can I change the frequency of the review?
+
+A: Currently, you cannot change the frequency of the review. If you have any concerns, you may contact us [here.](https://go.gov.sg/techpass-feedback)
+
+#### Q: When will the results of the review apply to my application?
+
+A: The results will be applied when the review ends. The end date is stated in the email.
+
+#### Q: What will happen if I ignore the review?
+
+A: If no reviewer has state any action, no change will be taken at the end of the review. We strongly recommend you to always review your users' access.
+
+#### Q: Why are some of the users not included in the review?
+
+A: When you assign user to your application after the review start date, the user will not be reflected in the review.
+
+#### Q: Why am I not included as the reviewer when I am a Tenant Administrator
+
+A: If you add a new user as a Tenant Administrator after the review start date, he/she will not be included in the current review. The user will only be included as a reviewer in future reviews.
