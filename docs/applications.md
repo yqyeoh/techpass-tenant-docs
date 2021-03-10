@@ -109,12 +109,14 @@ The purpose of this review is to ensure that you as a Tenant Administrator make 
 
 5. You can select any of the decisions for a user
 
-- Approve: User will continue to have access to your application.
-- Deny: User will not have access to your application once the decision is applied at the end of the review.
-- Don't Know (Not recommended): If you are unsure, you can select this option. User gets to keep their access.
-- Accept Recommendation: You can choose to accept Microsoft's Recommendation.
+| Types of decision | Description|
+| ------------- |-------------|
+| Approve    | User will continue to have access to your application.|
+| Deny      | User will not have access to your application once the decision is applied at the end of the review.|
+| Don't Know (Not recommended) | If you are unsure, you can select this option. User gets to keep their access.|
+| Accept Recommendation | You can choose to accept Microsoft's Recommendation.|
 
-Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
+?> Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
 
 ### Frequently Asked Questions
 
