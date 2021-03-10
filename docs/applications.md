@@ -111,7 +111,7 @@ The purpose of this review is to ensure that you as a Tenant Administrator make 
 
 - Approve: User will continue to have access to your application.
 - Deny: User will not have access to your application once the decision is applied at the end of the review.
-- Don't Know (Not reccommended): If you are unsure, you can select this option. User gets to keep their access.
+- Don't Know (Not recommended): If you are unsure, you can select this option. User gets to keep their access.
 - Accept Recommendation: You can choose to accept Microsoft's Recommendation.
 
 Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
@@ -138,6 +138,6 @@ A: If no reviewer has state any action, no change will be taken at the end of th
 
 A: When you assign user to your application after the review start date, the user will not be reflected in the review.
 
-#### Q: Why am I not included as the reviewer when I am a Tenant Administrator
+#### Q: Why am I not included as the reviewer when I am a Tenant Administrator?
 
 A: If you add a new user as a Tenant Administrator after the review start date, he/she will not be included in the current review. The user will only be included as a reviewer in future reviews.
