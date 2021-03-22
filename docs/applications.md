@@ -101,9 +101,10 @@ The purpose of this review is to ensure that you as a Tenant Administrator make 
 1. You will receive an email asking you to review access. An example of an email is as follow:
 ![Access Review Email](assets/images/application/accessreview_invitation.png)
 
-2. Click on 'Start Review' link.
+2. Click on 'Start Review' link or go to [https://myaccess.microsoft.com/](https://myaccess.microsoft.com/)
 
 3. Select Access reviews from the menu on the left side bar to see a list of pending access reviews assigned to you.
+![Access Review Landing Page](assets/images/application/accessreview_landingpage.png)
 
 4. Click on the name of an access review to get started.
 
@@ -119,6 +120,20 @@ The purpose of this review is to ensure that you as a Tenant Administrator make 
 ?> Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
 
 ### Frequently Asked Questions
+
+#### Q: Why is my page showing "There are no access reviews assigned to you"?
+
+A: Verify the following:
+
+1. Ensure that the review has not ended and you are still a Tenant Administrator.
+
+2. Ensure that you have logged in using the correct email. It should be the email used to sign up TechPass Portal.
+![Check Profile](assets/images/application/accessreview_profile.png)
+
+3. Ensure that you are in the right organisation.
+![Check Organisations](assets/images/application/accessreview_organisations.png)
+
+If you are unable to view the access review after these steps, you may contact us [here.](https://go.gov.sg/techpass-feedback)
 
 #### Q: How long will the review last?
 
