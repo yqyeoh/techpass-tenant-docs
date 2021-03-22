@@ -108,16 +108,16 @@ The purpose of this review is to ensure that you as a Tenant Administrator make 
 
 4. Click on the name of an access review to get started.
 
-5. You can select any of the decisions for a user
+5. You can select any of the decisions for a user and you can change the decision anytime before the review's end date
 
 | Types of decision | Description|
 | ------------- |-------------|
 | Approve    | User will continue to have access to your application.|
 | Deny      | User will not have access to your application once the decision is applied at the end of the review.|
 | Don't Know (Not recommended) | If you are unsure, you can select this option. User gets to keep their access.|
-| Accept Recommendation | You can choose to accept Microsoft's Recommendation.|
+| Accept Recommendation | You can choose to accept Microsoft's Recommendation. The recommendations are generated based on the user's sign-in activity.|
 
-?> Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs.
+?> Do note that the decisions/remarks you made can be seen by other reviewers and will be recorded in the audit logs. If there are multiple reviewers, the last submitted decision will be the applied result.
 
 ### Frequently Asked Questions
 
