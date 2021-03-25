@@ -149,7 +149,7 @@ A: The results will be applied when the review ends. The end date is stated in t
 
 #### Q: What will happen if I ignore the review?
 
-A: If no reviewer has state any action, no change will be taken at the end of the review. We strongly recommend you to always review your users' access.
+A: Reminders will be sent half-way through the duration of the review if you have not completed your review. At the end of the review, if no reviewer has state any action, no change will be taken. We strongly recommend you to always review your users' access.
 
 #### Q: Why are some of the users not included in the review?
 
