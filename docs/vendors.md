@@ -15,3 +15,5 @@ Tenant admins are able to invite vendors as Tenant co-admins, or as application 
 ?> The invited vendor would receive an email indicating the **username** and a phone SMS for the **password**
 
 You can then proceed to add the vendor as a [co-admin](namespaces#Managing-Tenant-Admins) or add as an [application user](applications#Managing-Access-to-your-App)!
+
+?> To edit your vendor info, simply click on the edit icon beside your vendor row!
