@@ -67,20 +67,27 @@ Once you have your webhook endpoint configured on your server, you can register 
 You will receive a webhook secret upon a successful registration.
 
 ## Check Signatures <a id="verify"></a>
-To prevent data tampering attacks, TechPass will sign the webhook payload with your webhook secret using HMAC-SHA256 to generate a hash, which will be included in a `X-TECHPASS-SIGNATURE` header of every webhook request sent to your endpoint.
+To enhance the security of webhooks, TechPass backend will perform signed requests to all webhook requests sent to our Tenant(s). Each webhook request will contain a `X-TECHPASS-SIGNATURE` header which contains a timestamp and a signature hash which is generated using HMAC-SHA256 with your unique webhook secret.
 
-After receiving the webhook event, your server must validate that the signature in `X-TECHPASS-SIGNATURE` from the headers, matches the signature hash that you compute from the webhook payload.
+To prevent replay attacks by malicious actors, check that the difference between the timestamp you received the webhook request and the timestamp attached in the `X-TECHPASS-SIGNATURE` header does not exceed 5 minutes.
+
+To prevent data tampering attacks, compute a HMAC-SHA256 signature hash and compare if the computed signature matches the signature attached in the `X-TECHPASS-SIGNATURE` header. Refer to the instructions in the below section to understand how the HMAC-SHA256 signature hash can be computed.
 
 ### Validating Signatures
 
 You can compute and validate the signature using the following steps:
 
-1. Receive the raw JSON payload body.
-2. Compute a SHA256 HMAC for the payload, together with your webhook secret.
-3. Compute the hex digest of the HMAC.
-4. Compare your computed signature against the `X-TECHPASS-SIGNATURE`.
+1. Save the current timestamp of the received request and the webhook secret to a variable
+2. From the `X-TECHPASS-SIGNATURE` header, extract the timestamp and signatures
+3. Save the raw JSON payload to a variable
+4. Prepare the signature payload by concatenating the timestamp and JSON payload together, using a colon(:) as a delimiter.
+5. Compute a SHA256 HMAC of the signature payload by using your webhook secret as the key.
+6. Compute the hex digest of the HMAC.
+7. Compare your computed signature against the signature extracted from `X-TECHPASS-SIGNATURE`.
 
-If the signatures do not match, the request should not be trusted and you should not process it.
+If the difference between the time when the webhook request is received and the timestamp in the signature is more than 5 minutes, you may treat it as a replay attack and ignore the request.
+
+If the computed signature and the signature extracted from the header do not match, the request should not be processed.
 
 #### Example code setup
 
@@ -99,13 +106,31 @@ const PORT = process.env.PORT || 4321;
 
 app.use(express.json({ limit: '10kb' }));
 
-app.post('/webhook', (req, res) => {
-  signature = req.headers['x-techpass-signature'];
-  secret = process.env.WEBHOOK_SECRET;
+app.post('/webhook', async (req, res) => {
+  // 1. Save the current timestamp of the received request to a variable
+  const timeReceived = Math.floor(new Date().getTime() / 1000)
+  const secret = process.env.WEBHOOK_SECRET;
 
-  // compute and verify hmac hash
-  computed = crypto.createHmac("sha256", secret).update(JSON.stringify(req.body)).digest('hex');
-  valid = signature === computed
+  // 2. From the X-TECHPASS-SIGNATURE header, extract the timestamp and signatures
+  const signature = req.headers['x-techpass-signature'];
+  const [timekv, signedKv] = signature.split(',')
+  const [, timeSent] = timekv.split('=')
+  const [, signedHash] = signedKv.split('=')
+
+  // If more than 5 mins, treat it as a replay attack and ignore request
+  if (timeReceived - timeSent > (60*5)) {
+    return res.status(200).send()
+  }
+
+  // 3. Save the raw JSON payload to a variable
+  const reqPayload = JSON.stringify(req.body);
+  // 4. Prepare the signature payload by concatenating the timestamp and JSON payload together, using a colon(:) as a delimiter.
+  const signedPayload = `${timeSent}:${reqPayload}`
+  // 5. Compute a SHA256 HMAC of the signature payload by using your webhook secret as the key.
+  // 6. Compute the hex digest of the HMAC.
+  const computed = crypto.createHmac("sha256", secret).update(signedPayload).digest('hex');
+  // 7. Compare your computed signature against the signature extracted from
+  const valid = signedHash === computed
 
   if (valid) {
     // do whatever automation when webhook triggered
