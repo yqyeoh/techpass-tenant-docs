@@ -14,6 +14,14 @@ All non-markdown files (i.e. images and sample code files) should live within th
 - Download this repository via `git clone`
 - Run `docsify serve .`
 
+#### Setting Up on zsh terminal
+if you get `zsh:1: command not found: docsify` after npm install:
+make sure you add `export PATH="$HOME/.npm-packages/bin:$PATH"` to the 1st line in your ~/.zshrc.
+Then `source ~/.zshrc` to reload. Finally, test with `docsify --version`. You should see the following:
+> docsify-cli version:
+x.x.x
+
+
 ### Syntax Highlighting
 The repository has been pre-configured to pull in the default Developer Portal's styling for Documentations. (See [index.html](./index.html))
 
