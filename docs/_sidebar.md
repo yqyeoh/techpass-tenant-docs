@@ -1,4 +1,5 @@
 - [Getting Started](quickstart)
+- [Concepts](/concepts/_sidebar.md)
 - [Your Profile](profile)
 - [Roles](roles)
 - [Namespaces](namespaces)
@@ -7,5 +8,4 @@
 - [Vendors](vendors)
 - [Webhooks](webhooks)
 - [APIs](apis)
-- [Concepts](concepts)
 - [Resources](resources)
