@@ -7,7 +7,7 @@ This specification and its extensions are being developed within the IETF OAuth 
 
 Introduction to Oauth 2.0 and OpenID connect
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/996OiexHze0/0.jpg)](https://youtu.be/996OiexHze0 "Video Title")
+[![OAuth 2.0 and OpenID Connect](assets/concept-oauth2/youtubevid.jpg)](https://youtu.be/996OiexHze0 "Video Title")
 
 ## Microsoft Azure Active Directory as an Identity Provider
 The Microsoft identity platform endpoint for identity-as-a-service implements authentication and authorization with the industry standard protocols OpenID Connect (OIDC) and OAuth 2.0, respectively. 
@@ -40,7 +40,7 @@ code_challenge = BASE64URL-ENCODE(SHA256(ASCII(code_verifier)))
 
 ![auth_code_grant](assets/concept-oauth2/authcodegrant.png)
 
-Next: Follow through instructions in this [article](authcodegrant) on how to integrate your application/web portal to enable TechPass's Single-Sign-On via Auth Code Grant flow.
+Next: Follow through instructions in this [article](/concepts/authcodegrant) on how to integrate your application/web portal to enable TechPass's Single-Sign-On via Auth Code Grant flow.
 
 ## Client Credentials Grant 
 You can use the [OAuth 2.0 client credentials grant](https://tools.ietf.org/html/rfc6749#section-4.4) specified in RFC 6749, sometimes called two-legged OAuth, to access web-hosted resources by using the identity of an application. 
@@ -59,7 +59,7 @@ There are 3 parts to establishing this flow:
 
 ![client_credentials_secret](assets/concept-oauth2/clientcredsecrets.png)
 
-Next: Follow through instructions in this [article](clientcredentials) on how to create client secret and using it to exchange for tokens using Client Credentials Grant flow with secrets.
+Next: Follow through instructions in this [article](/concepts/clientcredentials) on how to create client secret and using it to exchange for tokens using Client Credentials Grant flow with secrets.
 
 ### Client Credentials Grant with Certificate (recommended by CSG)
 There are 3 parts to establishing this flow:

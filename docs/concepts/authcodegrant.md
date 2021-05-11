@@ -107,7 +107,7 @@ https://login.microsoftonline.com/edf6f660-7319-45db-8531-fdbd46047921/oauth2/v2
     Then replace [replace_with_code_challenge] with the generate code challenge
    
 
-Download TechPass logo: [techpass.svg](assets/techpass.svg)
+Download TechPass logo in white: [![techpass.svg](assets/techpass.svg)]
 ```
 <a id="techpass-logo" href="[method that generates the login url]"><button class="sgds-button is-primary "><img src="/[location in frontend portal]/techpass.svg" class="techpass-logo" alt="">Login with TechPass</button></a>
 ```
