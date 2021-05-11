@@ -78,4 +78,4 @@ There are 3 parts to establishing this flow:
 
 ![client_credentials_cert](assets/concept-oauth2/clientcredcerts.png)
 
-Next: Follow through instructions in this [article](clientcredentials) on how to upload client certificate and using it to exchange for tokens using Client Credentials Grant flow with certificate.
+Next: Follow through instructions in this [article](/concepts/clientcred) on how to upload client certificate and using it to exchange for tokens using Client Credentials Grant flow with certificate.
