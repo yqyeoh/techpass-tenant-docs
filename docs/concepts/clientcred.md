@@ -12,11 +12,11 @@ OAuth 2.0's Client Credentials Grant: https://docs.microsoft.com/en-us/azure/act
 * your application portal design have a Frontend and Backend infrastructure setup. Although only backend can use this flow.
 
 ## Create an application
-Refer to create an application step in [Auth Code](authcodegrant) flow if you haven't created an application.
+Refer to create an application step in [Auth Code](/concepts/authcodegrant?id=_1-create-an-application) flow if you haven't created an application.
 
 ## Establish client credentials grant flow with secret
 ### Create Secret
-Refer to create secret step in [Auth Code](authcodegrant) flow if you haven't created a secret yet.
+Refer to create secret step in [Auth Code](/concepts/authcodegrant?id=_2-create-secret) flow if you haven't created a secret yet.
 
 ### Gather the endpoints and configurations required for your portal
 You should see Application ID and Directory ID from the properties section of your application. Please make a note of these values.
