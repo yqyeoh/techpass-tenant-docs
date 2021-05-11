@@ -59,7 +59,7 @@ There are 3 parts to establishing this flow:
 
 ![client_credentials_secret](assets/concept-oauth2/clientcredsecrets.png)
 
-Next: Follow through instructions in this [article](/concepts/clientcredentials) on how to create client secret and using it to exchange for tokens using Client Credentials Grant flow with secrets.
+Next: Follow through instructions in this [article](/concepts/clientcred) on how to create client secret and using it to exchange for tokens using Client Credentials Grant flow with secrets.
 
 ### Client Credentials Grant with Certificate (recommended by CSG)
 There are 3 parts to establishing this flow:
