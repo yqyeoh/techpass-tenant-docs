@@ -14,7 +14,7 @@ The Microsoft identity platform endpoint for identity-as-a-service implements au
 While the service is standards-compliant, there can be subtle differences between any two implementations of these protocols. - reference: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols
 
 ### Supported Grant Types
-TechPass will be support 2 grant types of OAuth 2.0, namely:
+TechPass will be supporting 2 grant types of OAuth 2.0, namely:
 
 * Auth Code Flow with Proof Key for Code Exchange (PKCE)
 * Client Credentials Grant (with secret or certificate)
