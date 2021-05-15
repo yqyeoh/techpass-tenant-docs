@@ -55,7 +55,7 @@ There are 3 parts to establishing this flow:
 
 **Tokens Issued:** Access
 
-2 parties involved in the sign in exchange using Client Credentials Grant flow. Your application/web portal backend (safely secure within a private subnet) and AzureAD via TechPass.
+2 parties involved in the sign in exchange using Client Credentials Grant flow. Your application/web portal backend (safely secured within a private subnet) and AzureAD via TechPass.
 
 ![client_credentials_secret](assets/concept-oauth2/clientcredsecrets.png)
 
@@ -66,8 +66,8 @@ There are 3 parts to establishing this flow:
 
 1. Obtain a certificate issued by CoreSG (WOG CA??) or public CA (eg. let's encrypt or AWS certificate manager)
 * **Note:** CSG recommends **1** year maximum for validity period. You will need to plan for rollover
-* Keep your private key **secure**. Can consider using AWS Secret Manager but please be mindful of the secrets size limit (more info)
-2. Adding permissions to the client application (No action on your part. It's taken care by TechPass)
+* Keep your private key **secure**. Can consider using AWS Secret Manager but please be mindful of the secrets size limit ([more info](https://docs.aws.amazon.com/general/latest/gr/asm.html#limits_secrets-manager))
+2. Adding permissions to the client application (No action on your part. It's taken care of by TechPass)
 3. Upload your public certificate to TechPass
 4. Generate JWT assertion using your public cert and signed by private key
 5. Exchanging of token using generated JWT assertion 
