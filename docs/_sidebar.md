@@ -7,5 +7,5 @@
 - [Groups](groups)
 - [Vendors](vendors)
 - [Webhooks](webhooks)
-- [APIs](apis)
+- [APIs](/apis/_sidebar.md)
 - [Resources](resources)
