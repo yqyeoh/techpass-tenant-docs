@@ -5,4 +5,4 @@
 ![api_key_section](assets/api-key/02-api-key-section.png)
 4. Click Create and take note of the API Key value because **this is the only time the full value will be shown**.
 ![create_api_key](assets/api-key/03-create-api-key.png)
-5. Ensure that the API Key is stored securely, **DO NOT SHARE THE API KEY** and **DO NOT COMMIT THE A{I KEY} TO THE SOURCE CODE REPO**.
+5. Ensure that the API Key is stored securely, **DO NOT SHARE THE API KEY** and **DO NOT COMMIT THE API KEY TO THE SOURCE CODE REPO**.
