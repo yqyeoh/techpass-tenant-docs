@@ -3,25 +3,27 @@ The full specification of the Autiomation API is published in [here](https://stg
 
 ## Required Keys and Tokens
 For the Tenant's Automation Application to make the Automation API requests, two essential data are needed:
+
 ### API Key
 1. This is the AWS API Gateway authentication mechanism used for the application to make HTTPS requests to the Automation API endpoint.
 2. Note that this allows TechPass to throttle the number of API requests made by the tenants. The exact threshold has yet to be decided.
+
 ### Access Token
 1. The access token encapsulates the requester's security identity and should be used as the bearer token for all HTTPS requests made to the Automation API endpoint. This will authorise the request to allow operations based on the tenant's namespace.
-2. 2 ways of requesting for an access token:
-* Use Client Assertion (certificates) – this is the recommended approach
-* Use Client Secret
+2. There's 2 ways to request for an access token:
+    * Use Client Assertion (certificates) – this is the recommended approach
+    * Use Client Secret
 
 ## Example cURL Usage 
 ### Request for Access Token Using Client Assertion
 1. The OAuth 2.0 token endpoint (v2) is **POST** https://login.microsoftonline.com/{DirectoryID}/oauth2/v2.0/token.
-* For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/docs/apis/tenant-id.md).
+    * For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/apis/tenant-id.md).
 2. The request payload for the token endpoint requires the **client_id**, **client_assertion** and **client_assertion_type**.
-* For **client_id**, please refer to the [How To Get The Application/Client ID](/docs/apis/client-id.md).
-* For **client_assertion**, please refer to the following documentations:
-a. [Microsoft identity platform application authentication certificate credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
-b. [Microsoft identity platform and the OAuth 2.0 client credentials flow (Second case: Access token request with a certificate)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate)
-c. For client_assertion_type, use **urn:ietf:params:oauth-client-assertion-type:jwt-bearer**.
+    * For **client_id**, please refer to the [How To Get The Application/Client ID](/pis/client-id.md).
+    * For **client_assertion**, please refer to the following documentations:
+        * [Microsoft identity platform application authentication certificate credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
+        * [Microsoft identity platform and the OAuth 2.0 client credentials flow (Second case: Access token request with a certificate)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate)
+        * For client_assertion_type, use ```urn:ietf:params:oauth-client-assertion-type:jwt-bearer```
 3. Once you've retrieved a **valid access token**, use it as the **bearer token** for succeeding Automation API requests.
 
 ### Command
@@ -45,10 +47,10 @@ curl -X POST 'https://login.microsoftonline.com/edf6f660-7319-45db-8531-fdbd4604
 
 ### Request for Access Token Using Client Secret
 1. The OAuth 2.0 token endpoint (v2) is **POST** https://login.microsoftonline.com/{DirectoryID}/oauth2/v2.0/token.
-* For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/docs/apis/tenant-id.md).
+    * For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/apis/tenant-id.md).
 2. The request payload for the token endpoint requires the **client_id** and **client_secret**.
-* For **client_id**, please refer to the [How To Get The Application/Client ID](/docs/apis/client-id.md).
-* For **client_secret**, please refer to the [How To Get The Client Secret](/docs/apis/client-secret.md).
+    * For **client_id**, please refer to the [How To Get The Application/Client ID](/apis/client-id.md).
+    * For **client_secret**, please refer to the [How To Get The Client Secret](/apis/client-secret.md).
 3. Once you've retrieved a **valid access token**, use it as the **bearer token** for succeeding Automation API requests.
 
 ### Command
