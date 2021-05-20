@@ -19,7 +19,7 @@ For the Tenant's Automation Application to make the Automation API requests, two
 1. The OAuth 2.0 token endpoint (v2) is **POST** https://login.microsoftonline.com/{DirectoryID}/oauth2/v2.0/token.
     * For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/apis/tenant-id.md).
 2. The request payload for the token endpoint requires the **client_id**, **client_assertion** and **client_assertion_type**.
-    * For **client_id**, please refer to the [How To Get The Application/Client ID](/pis/client-id.md).
+    * For **client_id**, please refer to the [How To Get The Application/Client ID](/apis/client-id.md).
     * For **client_assertion**, please refer to the following documentations:
         * [Microsoft identity platform application authentication certificate credentials](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials)
         * [Microsoft identity platform and the OAuth 2.0 client credentials flow (Second case: Access token request with a certificate)](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow#second-case-access-token-request-with-a-certificate)
