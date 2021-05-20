@@ -1,0 +1,6 @@
+- [Back to main](/)
+- [Automation API Integration](/apis/integration)
+- [How to get the API Key](/apis/api-key.md)
+- [How to get the Tenant ID](/apis/tenant-id)
+- [How to get the Client ID](/apis/client-id)
+- [How to get the Client Secret](/apis/client-secret)
