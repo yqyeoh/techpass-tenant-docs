@@ -22,15 +22,15 @@ There are 2 types of Coarse Grain access controls that you can setup to allow us
 - individual users
 - groups
 
-These are achieved using [User Assignment](applications/#user-assignment-required) feature 
+These are achieved using [User Assignment](applications#user-assignment-required) feature 
 
 ### User Assignment
 In TechPass, Tenants can configure their applications to only allow authorised users to sign in. 
-This is done by ensuring the [*User Assignment Required*](applications/#user-assignment-required) setting is checked. 
+This is done by ensuring the [*User Assignment Required*](applications#user-assignment-required) setting is checked. 
 With this setting enabled, any user who wishes to sign in to your application will need to be assigned access to the app. This allows the tenant to perform pre-approval checks on the user before access is granted. 
 This is useful for application that are/should be accessible only to a specific subset of TechPass users. 
 
-?> Assigning access to users can be programmatically given via TechPass's [*Automation APIs*](apis). The APIs provide tenants with the versatility to implement automated pre-approval checks in their backend and then call the relevant API to assign access once the checks are completed.
+?> Assigning access to users can be programmatically given via TechPass's [*Automation APIs*](apis/integration). The APIs provide tenants with the versatility to implement automated pre-approval checks in their backend and then call the relevant API to assign access once the checks are completed.
 
 For example, your service is a paid subscription model. You will allow only paid users to access.
 You can enable *User Assignment Required* and add the paid users to your application.
@@ -49,7 +49,7 @@ Groups within TechPass serves as a dual-purpose feature.
   
 The tenant admins can carry out their own verification of actual user identity before granting access.
 
-Off-the-shelf proprietary applications should already come with some sort of access control mechanism built-in. Depending on the capability of the application, it may not be possible for tenants to manage permissions via TechPass. Tenants will need manage access locally on these applications using the built-in feature.
+Off-the-shelf proprietary applications should already come with some sort of access control mechanism built-in. Depending on the capability of the application, it may not be possible for tenants to manage permissions via TechPass. Tenants will need to manage access locally on these applications using the built-in feature.
 
 Certain proprietary applications do support features that allow TechPass to manage permission through the use of groups. These applications can read the group property value from the *access token* and *id token* that is issued by TechPass and assign permission according to the group that the user is in. Tenants will need to consult the technical documentations to figure how to configure their applications to read this information.
 
