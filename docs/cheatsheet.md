@@ -23,15 +23,8 @@ Always in a secret manager and **never** hard coded!
 Another great writeup on CSRF attack prevention by OWASP:
 https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
 
-## IM8, CSG requirements??
-
-Password mgmt
-account lifecyle
-encouragement of auth code grant and avoid implicit
-Account lockout - after 10 attempts?
-
-link to im8 and csg requiremnt docs
-
+## IM8 compliance
+TechPass is designed to meet IM8 regulatory compliance. Please refer to IM8 documents on IAM compliance. 
 
 ## Session Management
 TechPass will not control what happens after authentication and authorization. 
