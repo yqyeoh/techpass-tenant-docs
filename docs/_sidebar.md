@@ -8,4 +8,5 @@
 - [Vendors](vendors)
 - [Webhooks](webhooks)
 - [APIs](/apis/_sidebar.md)
+- [Cheatsheet](cheatsheet)  
 - [Resources](resources)
