@@ -11,6 +11,10 @@ Tenant admins are able to invite vendors as Tenant co-admins, or as application 
 
 ![add_vendor](assets/add_vendor.gif)
 
+!> Note: Email, username and mobile number must be unique.
+
+Please inform your vendor to use his account if it is an existing user account.
+Contact TechPass if the account is disabled due to inactivity.
 
 ?> The invited vendor would receive an email indicating the **username** and a phone SMS for the **password**
 
