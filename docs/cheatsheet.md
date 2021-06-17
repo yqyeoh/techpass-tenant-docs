@@ -26,9 +26,9 @@ Some of the useful dos and don'ts would be:
    Current convention is to have your tenant namespace as a prefix to your group names, delimited with ":"  
    <tenant_namespace>:<group_name>  
    Eg. SHIP:billing, SHIP:project-a, etc  
-   You can further extend multi-tenancy by appending to the prefix  
-   Eg. <tenant_namespace>:<project>:<group_name>  
-   SHIP:MOH:billing, SHIP:MOH:project-a, SHIP:MOE:billing,etc
+   You can further extend multi-tenancy by appending to the prefix with delimiter "-"
+   Eg. <tenant_namespace>:<project>-<group_name>  
+   SHIP:MOH-billing, SHIP:MOH-project-a, SHIP:MOE-billing,etc
 4. Throttle request rate to 1 request per second. Requests made should be synchronous (cannot fire a new request unless the previous request is done)  
    Due to a technical limitation on Azure's services, TechPass has noticed a drop in requests handled due to throttling.
    We are looking into this limitation. Hence the recommendation to throttle your requests as well.
