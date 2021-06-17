@@ -1,5 +1,9 @@
 ## Automation API OpenAPI Spec
-The full specification of the Autiomation API is published in [here](https://stg.docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/).
+The full specification of the Autiomation API is published in here:  
+[Staging](https://stg.docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/)  
+[Production](https://docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/)
+
+Please refer to [cheatsheet](/cheatsheet?id=automation-apis-the-dos-and-don39ts) for the dos and don'ts of using Automation APIs
 
 ## Required Keys and Tokens
 For the Tenant's Automation Application to make the Automation API requests, two essential data are needed:
