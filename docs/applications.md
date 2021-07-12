@@ -69,6 +69,14 @@ A list of users and/or user groups that has been granted permission to sign in t
 
 ![create_app](assets/images/application/app_create.png)
 
+## Updating an App
+?> It may take some time (5-15 seconds) for the changes made on application to take effect. Please wait before reloading.
+
+1. On the applications overview page, click on the edit button.
+2. Edit the fields that need changes and click on the ***Update*** button.
+
+![edit_app](assets/images/application/app_edit.png)
+
 ## Deleting a Registered App
 !> Deleting an app is a **irreversible** change. Please consider carefully!
 
