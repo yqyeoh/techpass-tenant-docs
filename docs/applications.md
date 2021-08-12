@@ -63,6 +63,10 @@ The secret key is used by tenant services to authenticate itself to TechPass AAD
 ### Assigned Users and Groups
 A list of users and/or user groups that has been granted permission to sign in to your tenant service. If you add a user group, ALL users within that group will be granted permission. 
 
+However, do take note that this **does not** apply to nested group(s). Only direct users of a group will receive the assigned role permission as app assignments do not cascade to nested group(s).
+
+?> Find out more about managing user assignment [here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/assign-user-or-group-access-portal).
+
 ## Registering an App
 1. On the applications tab within a namespace, click on the '***+ Create***' button.
 2. Fill up the required information marked with '*' and click ***Submit***.
