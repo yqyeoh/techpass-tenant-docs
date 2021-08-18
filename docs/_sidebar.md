@@ -1,4 +1,4 @@
-- [Getting Started](quickstart)
+- [Overview](home)
 - [Concepts](/concepts/oauth2.md)
 - [Your Profile](profile)
 - [Roles](roles)
