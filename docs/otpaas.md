@@ -30,16 +30,21 @@ The OTPaaS requires your service to make authorize calls by using your API Key. 
 The sequence diagram below illustrates a typical use-case for the OTPaaS.
 ![otpaas_seqdiag](./assets/images/otpaas/otpaas_seqdiag.png)
 
+### Splitting the OTP input
+Take note that the user will be receiving their OTP in the form of `id-pin` e.g. `cAfpFbxX-740767`.
+
+Your code will likely need to split the input by separating the `id` and `pin` using the `-` delimiter. That should aid in calling the verify OTP API as you will need the `id`, which can either be retrieve from the response of the request OTP API, or by spltting the OTP input that the user entered.
+
 ## How to call OTPaaS APIs
 For the API Documentation, please refer to [TechPass OTPaaS API documentation](https://stg.docs.developer.gov.sg/docs/techpass-otpaas-api/).
 
 OTPaaS contains 2 API endpoints:
-1. POST  /pin
-2. PUT   /pin/{requestID}
+1. POST  /otp
+2. PUT   /otp/{id}
 
 The first endpoint generates an OTP to the end user and sends it to their email.
 
-The second endpoint verifies the OTP against the request ID of the OTP request.
+The second endpoint verifies the OTP against the ID of the OTP request.
 
 ### Generating your API Key
 The API requests require the Authorization Bearer header together with the valid token to allow a successful call. The token is a base64 encoded string hash of the `appId` and the HMAC-SHA256 hash `secret`.
