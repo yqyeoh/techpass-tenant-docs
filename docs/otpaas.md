@@ -26,6 +26,8 @@ The `serviceName` is applied to the email that will be sent out by TechPass to t
 ## OTPaaS Workflow
 The OTPaaS requires your service to make authorize calls by using your API Key. As the API Key is considered sensitive credentials, you must have a backend to send the request(s) to TechPass OTPaaS.
 
+!> Do not commit the API Key into your source code repository. Keep the API Key secure by using tools such as secrets manager.
+
 ### Sequence Diagram
 The sequence diagram below illustrates a typical use-case for the OTPaaS.
 ![otpaas_seqdiag](./assets/images/otpaas/otpaas_seqdiag.png)
