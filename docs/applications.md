@@ -44,7 +44,11 @@ Unchecking this field will disable ALL user sign in to the tenant service.
 ### User Assignment Required
 This properties determines if a user needs to be granted access before he/she is allowed to sign into your app. Leaving this field uncheck means that **ALL** TechPass users will be able to sign into your app.
 
-!> Careful consideration is required if you wish the alter the value of this field. Find out more about to how design your [Access Model](resources#concepts) with TechPass.
+Careful consideration is required if you wish the alter the value of this field. Find out more about to how design your [Access Model](resources#concepts) with TechPass.
+
+Unchecking user assignment would make your application accessible to anyone with a TechPass account.
+
+!> If a user's access is **explicitly revoked** from other applications; That user will still **have access** to your application, until it expires due to inactivity.
 
 If you left this field checked, you will need to grant access to users that you want to allow into your app. See [Assigning Access to your App](#assigning-access-to-your-app) for more info.
 
