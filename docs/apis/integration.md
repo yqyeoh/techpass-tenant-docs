@@ -1,7 +1,7 @@
 ## Automation API OpenAPI Spec
 The full specification of the Autiomation API is published in here:  
-[Staging](https://stg.docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/)  
-[Production](https://docs.developer.gov.sg/docs/private/338954877/techpass-automation-api/)
+[Staging](https://stg.docs.developer.gov.sg/docs/techpass-automation-api/)  
+[Production](https://docs.developer.gov.sg/docs/techpass-automation-api/)
 
 Please refer to [cheatsheet](/cheatsheet?id=automation-apis-the-dos-and-don39ts) for the dos and don'ts of using Automation APIs
 
