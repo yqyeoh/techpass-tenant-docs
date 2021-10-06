@@ -8,7 +8,7 @@ Updating your profile enables TechPass and SGTS products to quickly reach out to
 
 !> Updating your TechPass profile does not automatically update your WoG profile. Please approach WoG or your HR directly to get your profile updated.
 
-!> If you are a verified vendor/contractor, please raise a ticket to update your profile [here]().
+!> If you are a verified vendor/contractor, please raise a ticket to update your profile [here](https://go.gov.sg/techpass-sr).
 
 ## Advanced Settings
 This section contains links to view your account and sign-in logs via Microsoft myaccount.
