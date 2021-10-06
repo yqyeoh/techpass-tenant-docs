@@ -2,7 +2,7 @@
 Account contains your profile and other user settings.
 
 ## Profile
-Updating your profile enables TechPass to quickly reach out to you when encountering any difficulties. Rest assured this information is not shared outside of TechPass!
+Updating your profile enables TechPass and SGTS products to quickly reach out to you when encountering any difficulties.
 
 ![profile](assets/images/account/user_profile.png)
 
