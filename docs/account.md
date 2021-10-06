@@ -32,10 +32,10 @@ Upon clicking **View Sign-In Activities**, you should see a page with all of you
 1. Visit [office.com](https://office.com)
 2. Click on **View Account**
 
-![view account step](assets/images/account/view_account_step.png)
+	![view account step](assets/images/account/view_account_step.png)
 
 3. You should be able to see your account overview page.
 
-![ms account overview](assets/images/account/ms_account_overview.png)
+	![ms account overview](assets/images/account/ms_account_overview.png)
 
 4. Click on **My sign-ins** on the left. You should now be able to see your sign-in activity logs.
