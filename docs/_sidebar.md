@@ -1,6 +1,6 @@
 - [Overview](home)
 - [Concepts](/concepts/oauth2.md)
-- [Your Profile](profile)
+- [Your Account](account)
 - [Roles](roles)
 - [Namespaces](namespaces)
 - [Applications](applications)
