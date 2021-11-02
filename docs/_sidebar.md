@@ -11,3 +11,4 @@
 - [APIs](/apis/integration.md)
 - [Cheatsheet](cheatsheet)  
 - [Resources](resources)
+<!--- [Setup two factor authentication](setup-two-factor-authentication)-->
