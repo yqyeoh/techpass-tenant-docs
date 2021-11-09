@@ -1,3 +1,4 @@
+<!--
 # Setup two-factor authentication for Microsoft 365 account
 
 This section guides public officers to setup two-factor authentication(2FA) for their Microsoft 365 account.
@@ -27,7 +28,7 @@ You will now be taken to the **Configure mobile app** page.
 
 ![confirmation-message](assets/images/enable-2fa/confirmation-message.png)
 
-9. Enter the six-digit verification code on your computer and click **Verify**.
+9. Enter the six-digit verification code on your computer and click **Verify**
 
 ![enter-6-digit-code](assets/images/enable-2fa/enter-6-digit-code.png)
 
