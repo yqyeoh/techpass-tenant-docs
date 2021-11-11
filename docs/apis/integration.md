@@ -18,7 +18,7 @@ For the Tenant's Automation Application to make the Automation API requests, two
     * Use Client Assertion (certificates) – this is the recommended approach
     * Use Client Secret
 
-## Example cURL Usage 
+## Example cURL Usage
 ### Request for Access Token Using Client Assertion
 1. The OAuth 2.0 token endpoint (v2) is **POST** https://login.microsoftonline.com/{DirectoryID}/oauth2/v2.0/token.
     * For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/apis/tenant-id.md).
@@ -115,5 +115,5 @@ Output
 ## Endpoints
 | Environment | Automation API Endpoint         |
 | ----------- | ------------------------------- |
-| STG         | https://api.stg.techpass.gov.sg |
+| STG         | https://api.stg.techpass.suite.gov.sg |
 | PROD        | https://api.techpass.gov.sg     |
