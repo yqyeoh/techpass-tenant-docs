@@ -1,7 +1,7 @@
 # Client Applications
 
 ## Overview
-Client applications or application (or simply apps) are namespace objects that represent a single tenant service that is integrated with TechPass AAD. Apps describes the tenant service to TechPass AAD and contains properties that define how TechPass AAD should interact with them. 
+Client applications or application (or simply apps) are namespace objects that represent a single tenant service that is integrated with TechPass AAD. Apps describes the tenant service to TechPass AAD and contains properties that define how TechPass AAD should interact with them.
 
 ## Properties
 ?> Some of these properties will only appear after the Client App has been created.
@@ -27,16 +27,16 @@ The landing page of your application where your users will use to login.
 ### Logout URL
 You can specify a URL to redirect your users to after they have successfully logged out from your app.
 
-### Redirect URL*
-After successfully authenticating your users, you will want your users to be redirected by to your app. You will need to provide 1 or more valid URLs to redirect your user to. This should be a user routable URL.
+### Redirect URL(s)*
+After successfully authenticating your users, you will want your users to be redirected by to your app. You will need to provide one or more valid URLs to redirect your user to. This should be a user routable URL.
 
 TechPass AAD will validate the `redirect_uri` parameter in all authorize HTTP requests for the app. If the value of the parameter does not match any of the URLs in this list. The authorisation request will fail.
 
-- To add more URLs, click on '*+ Add URL*' and enter the URL in the new text field that appears. 
+- To add more URLs, click on '*+ Add URL*' and enter the URL in the new text field that appears.
 - To remove an existing URL, just click on the thrash bin on the right of the URL that you want to remove.
 - Remember to click the Update button at the top if you are editing the URLs for an existing app.
 
-?> More information on Redirect URLs, can be found [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url).
+?> For more information, visit [Redirect URI(reply URL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url) and [Restrictions on wildcards in redirect URIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url#restrictions-on-wildcards-in-redirect-uris).
 
 ### Enable Sign In
 Unchecking this field will disable ALL user sign in to the tenant service.
@@ -53,7 +53,7 @@ Unchecking user assignment would make your application accessible to anyone with
 If you left this field checked, you will need to grant access to users that you want to allow into your app. See [Assigning Access to your App](#assigning-access-to-your-app) for more info.
 
 ### Implicit Grant
-Implicit grant is less secure than other grant flows and disabled by default. 
+Implicit grant is less secure than other grant flows and disabled by default.
 
 To enable implicit grant, check the corresponding boxes to allow an Access Token or ID Token or both to be issued in an implicit grant flow.
 
@@ -62,10 +62,10 @@ To enable implicit grant, check the corresponding boxes to allow an Access Token
 ?> More information regarding Implicit Grant is available [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
 ### Client Secrets
-The secret key is used by tenant services to authenticate itself to TechPass AAD. Each secret key is only valid for a period of one year once created. 
+The secret key is used by tenant services to authenticate itself to TechPass AAD. Each secret key is only valid for a period of one year once created.
 
 ### Assigned Users and Groups
-A list of users and/or user groups that has been granted permission to sign in to your tenant service. If you add a user group, ALL users within that group will be granted permission. 
+A list of users and/or user groups that has been granted permission to sign in to your tenant service. If you add a user group, ALL users within that group will be granted permission.
 
 However, do take note that this **does not** apply to nested group(s). Only direct users of a group will receive the assigned role permission as app assignments do not cascade to nested group(s).
 
@@ -77,11 +77,15 @@ However, do take note that this **does not** apply to nested group(s). Only dire
 
 ![create_app](assets/images/application/app_create.png)
 
+?> For more information, visit [Redirect URI(reply URL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url) and [Restrictions on wildcards in redirect URIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url#restrictions-on-wildcards-in-redirect-uris).
+
 ## Updating an App
 ?> It may take some time (5-15 seconds) for the changes made on application to take effect. Please wait before reloading.
 
 1. On the applications overview page, click on the edit button.
 2. Edit the fields that need changes and click on the ***Update*** button.
+
+?> For more information on Redirect URL(s), visit [Redirect URI(reply URL)](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url) and [Restrictions on wildcards in redirect URIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/reply-url#restrictions-on-wildcards-in-redirect-uris).
 
 ![edit_app](assets/images/application/app_edit.png)
 
@@ -92,16 +96,16 @@ However, do take note that this **does not** apply to nested group(s). Only dire
 2. Click on ***Confirm***.
 
 ## Managing Access to your App
-?> If you did not disable [User Assignment Required](#user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned). 
+?> If you did not disable [User Assignment Required](#user-assignment-required) option, TechPass users will not be able to sign in to your app unless they are authorized (or assigned).
 
 ### Adding a User or Group
 1. In the *Assigned Users and Groups* section, click on ***+ Add Users or Groups***.
 2. In the *Assign Role* screen, click on '+' sign next to ***Users and Groups***.
 3. Key in the a search phrase to locate the user or group.
 4. Click on the '+' sign on the right of the user/group. It should then appear on the *Selected Groups / Users* list.
-5. Click on ***Submit*** to effect the change. 
+5. Click on ***Submit*** to effect the change.
 
-### Removing a User or Group 
+### Removing a User or Group
 1. Check the box next to the user/group in the *Assigned Users and Groups* section.
 2. Click on ***x Remove Selected.***
 3. Click on ***Submit*** to effect the change.
