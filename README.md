@@ -1,4 +1,4 @@
-# TechPass User Doc Repository
+# TechPass Tenant Admin Doc Repository
 This is a documentation repository for TechPass, written for Documentation Portal, using [docsify](https://docsify.js.org/#/). You can find out what docsify or markdown extensions are supported [here](https://stg.docs.developer.gov.sg/docs/documentation-service-publisher-guide).
 
 > The repository is currently in active development and  contents will change rapidly.
