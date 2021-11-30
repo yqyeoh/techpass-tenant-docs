@@ -1,4 +1,4 @@
-# Welcome to TechPass User Documentation!
+# Welcome to TechPass Tenant Admin Documentation!
 ![banner](assets/images/banner.png)
 
 !> TechPass is currently in active development. The information within this documentation will change without notice and may not up-to-date.
