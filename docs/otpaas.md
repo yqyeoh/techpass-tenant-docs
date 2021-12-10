@@ -49,7 +49,7 @@ The first endpoint generates an OTP to the end user and sends it to their email.
 The second endpoint verifies the OTP against the ID of the OTP request.
 
 ### Generating your API Key
-The API requests require the Authorization Bearer header together with the valid token to allow a successful call. The token is a base64 encoded string hash of the `appId` and the HMAC-SHA256 hash `secret`.
+The API requests require the Authorization Bearer header together with the valid token to allow a successful call. The token is a base64 encoded string hash of the `namespace`, `appId` and the HMAC-SHA256 hash `secret`.
 
 You may use the following Node.js code to compute your API Key. Replace your `namespace`, `appId` and `secret` in the appropriate const below.
 
