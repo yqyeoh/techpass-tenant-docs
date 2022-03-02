@@ -7,7 +7,7 @@
 - [Groups](groups)
 - [Vendors](vendors)
 - [Webhooks](webhooks)
-- [OTPaaS](otpaas)
+- [OTPaaS](/otpaas/otpaas.md)
 - [APIs](/apis/integration.md)
 - [Cheatsheet](cheatsheet)  
 - [Resources](resources)

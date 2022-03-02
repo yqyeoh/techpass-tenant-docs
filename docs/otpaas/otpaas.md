@@ -30,7 +30,7 @@ The OTPaaS requires your service to make authorize calls by using your API Key. 
 
 ### Sequence Diagram
 The sequence diagram below illustrates a typical use-case for the OTPaaS.
-![otpaas_seqdiag](./assets/images/otpaas/otpaas_seqdiag.png)
+![otpaas_seqdiag](/assets/otpaas_seqdiag.png)
 
 ### Splitting the OTP input
 Take note that the user will be receiving their OTP in the form of `id-pin` e.g. `cAfpFbxX-740767`.
