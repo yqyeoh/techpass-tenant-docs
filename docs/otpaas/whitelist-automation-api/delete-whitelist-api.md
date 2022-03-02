@@ -1,7 +1,5 @@
 # Delete Whitelists API
-This API allows the deletion of a single of email domains / user email whitelist
-
-**Note: This API only delete a whitelist of a single OTP app**
+This API allows the deletion of a single of email domains / user email whitelist of a OTP app
 
 ## Request
 ```

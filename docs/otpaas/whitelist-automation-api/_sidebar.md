@@ -1,4 +1,5 @@
 - [Back to OTPaaS](/otpaas/otpaas)
 - [Whitelist APIs Introduction](/otpaas/whitelist-automation-api/intro)
 - [Add Whitelists API](/otpaas/whitelist-automation-api/add-whitelist-api)
-- [Delete Whitelists API](/otpaas/whitelist-automation-api/delete-whitelist-api)
+- [Delete Whitelist API](/otpaas/whitelist-automation-api/delete-whitelist-api)
+- [Update Whitelist API](/otpaas/whitelist-automation-api/update-whitelist-api)
