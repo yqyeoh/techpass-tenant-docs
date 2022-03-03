@@ -183,8 +183,8 @@ Content-type: application/json
                 "whitelistValue": "user_a@tech.gov.sg"
             },
             {
-                "whitelistId": "c203795d-316e-46f6-8853-625c2a4bd1dd",
-                "whitelistValue": "user_a@tech.gov.sg"
+                "whitelistId": "2f2c81dd-4c1f-475a-b035-5311c409c920",
+                "whitelistValue": "user_b@tech.gov.sg"
             }
         ]
     },
@@ -294,7 +294,7 @@ Content-type: application/json
 ```
 ## Error Responses
 
-There are two types of error responses. The first type is when a 400 Bad Request response is returned. The second type is when a 207 Multi Status response is returned but the response body contains the `"errors"` key.
+There are two types of error responses. The first type is when a `400 Bad Request` response is returned. The second type is when a `207 Multi Status` response is returned but the response body contains the `"errors"` key.
 
 The first error response is only returned when any of the values given is in an invalid format, such as invalid email domain, user email and/or expiry.
 An example of such an error response is shown below:
@@ -366,4 +366,4 @@ Content-type: application/json
 ```
 Note that for the second type of error response, each error in `"errors"` would correspond to a whitelist entry that is erroneous. The `"entryNumber"` key is the index of the whitelist entry in the request that is errorneous, hence would allow you to know which exact entry is erroneous.
 
-Due to the two types of error responses, the recommended way to handle errors for this API is to check for the first type of error response. Subsequently, if there are no error response, check if the `"207 Multi Status"` response contains the `"errors"` key. If the response does not contain the `"errors"` key, then there are truly no errors and all email domains and/or user emails in request should be successfully whitelisted.
+Due to the two types of error responses, the recommended way to handle errors for this API is to check for the first type of error response. Subsequently, if there are no error response, check if the `207 Multi Status` response contains the `"errors"` key. If the response does not contain the `"errors"` key, then there are truly no errors and all email domains and/or user emails in request should be successfully whitelisted.
