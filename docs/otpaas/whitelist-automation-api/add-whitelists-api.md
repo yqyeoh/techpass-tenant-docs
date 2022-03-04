@@ -38,7 +38,7 @@ No query parameters for this API
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | emailDomains | Array of email domains to add. Field should be left out if not adding any email domains for whitelisting.                                                                                                |
 | userEmails   | Array of user emails to add. Field should be left out if not adding any user emails for whitelisting.                                                                                                    |
-| emailDomain  | Email domain to whitelist. For e.g, `"gov.sg"`.                                                                                                                                                          |
+| emailDomain  | Email domain to whitelist. For e.g, `"tech.gov.sg"`.                                                                                                                                                          |
 | userEmail    | User email to whitelist. For e.g, `"john@tech.gov.sg"` .                                                                                                                                                 |
 | expiresAt    | Expiry datetime of whitelist. Must be a future datetime in RFC3339 format `(YYYY-MM-DDThh:mm:ssZ)`. For e.g, `2050-02-23T16:00:00Z`. Use UTC timezone. Field should be left out if not adding any expiration to whitelist. |
 
