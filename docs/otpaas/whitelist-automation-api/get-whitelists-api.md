@@ -29,7 +29,7 @@ The response status would be `200 OK`.
 
 ## Response Body Schema
 
-**Note: Fields with value of `0` denotes those field containing a number type.**
+?> Note: Fields with value of `0` denotes those field containing a number type.
 
 ```json
 {

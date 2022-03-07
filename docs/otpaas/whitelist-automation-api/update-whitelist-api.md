@@ -26,9 +26,9 @@ No query parameters for this API
 | Name         | Description                                                                                                                                                                                                              |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | whitelistValue | New value of whitelist. Field should be left out if the whitelist value is not being updated. |
-| expiresAt    | Expiry datetime of whitelist. Must be a future datetime in RFC3339 format `(YYYY-MM-DDThh:mm:ssZ)`. For e.g, `2050-02-23T16:00:00Z`. Use UTC timezone. Field should be left out if not updating expiration of whitelist. **Note: To remove expiration from whitelist, put empty string `""` for this field.** |
+| expiresAt    | Expiry datetime of whitelist. Must be a future datetime in RFC3339 format `(YYYY-MM-DDThh:mm:ssZ)`. For e.g, `2050-02-23T16:00:00Z`. Use UTC timezone. Field should be left out if not updating expiration of whitelist. **Put an empty string `""` for this field to remove the expiration from whitelist.** |
 
-**Note: A whitelist cannot be updated to be of another type, thus a email domain whitelist cannot be updated to be a user email whitelist and vice-versa.**
+?> Note: A whitelist cannot be updated to be of another type. Thus a email domain whitelist cannot be updated to be a user email whitelist and vice-versa.
 
 ## Response
 

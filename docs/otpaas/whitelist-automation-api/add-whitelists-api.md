@@ -1,7 +1,7 @@
 # Add Whitelists API
 This API allows the adding of a batch of email domains and/or user email for whitelisting per request.
 
-**Note: This API only adds whitelists to a single OTP app**
+?> Note: This API only adds whitelists to a single OTP app.
 
 ## Request
 ```
@@ -42,7 +42,7 @@ No query parameters for this API
 | userEmail    | User email to whitelist. For e.g, `"john@tech.gov.sg"` .                                                                                                                                                 |
 | expiresAt    | Expiry datetime of whitelist. Must be a future datetime in RFC3339 format `(YYYY-MM-DDThh:mm:ssZ)`. For e.g, `2050-02-23T16:00:00Z`. Use UTC timezone. Field should be left out if not adding any expiration to whitelist. |
 
-**Note: The sum of the number of email domains and user emails to be whitelisted cannot exceed 1000.**
+!> Note: The sum of the number of email domains and user emails to be whitelisted cannot exceed 1000.
 
 ## Response
 
@@ -51,7 +51,7 @@ The response status would either be `207 Multi Status` or `400 Bad Request`. If 
 
 ## Response Body Schema
 
-**Note: Fields with value of `0` denotes those field containing a number type.**
+?> Note: Fields with value of `0` denotes those field containing a number type.
 
 ```json
 {
