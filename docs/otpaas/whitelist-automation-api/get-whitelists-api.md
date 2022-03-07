@@ -56,6 +56,7 @@ The response status would be `200 OK`.
 | whitelistValue | Value of whitelist.                                                                                                                                                 |
 
 ## Usage Examples
+?> Refer to the [Endpoints](/otpaas/whitelist-automation-api/intro?id=endpoints) section to view the staging and production Automation API endpoints.
 
 Example for getting all whitelists of an OTP App
 
@@ -63,7 +64,7 @@ On the first request to retrieve the first page of whitelists, there is no need 
 
 **Request**
 ```http
-GET https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists?size=10
+GET https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists?size=10
 ```
 **Response**
 ```
@@ -89,7 +90,7 @@ On subsequent requests, use the value of `lastKey` from the response as the valu
 
 **Request**
 ```http
-GET https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists?size=10&lastKey=0f6eaaf5-2993-4a16-ac64-1796a94c1efa
+GET https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists?size=10&lastKey=0f6eaaf5-2993-4a16-ac64-1796a94c1efa
 ```
 **Response**
 ```
@@ -122,7 +123,7 @@ An example of this is shown below.
 
 **Errorneous Request**
 ```http
-GET https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/non_existent_appid/whitelists
+GET https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/non_existent_appid/whitelists
 ```
 **Errorneous Response**
 ```http

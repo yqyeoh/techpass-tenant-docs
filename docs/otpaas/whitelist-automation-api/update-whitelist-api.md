@@ -42,12 +42,13 @@ No response body is returned for this API.
 No response body is returned for this API.
 
 ## Usage Examples
+?> Refer to the [Endpoints](/otpaas/whitelist-automation-api/intro?id=endpoints) section to view the staging and production Automation API endpoints.
 
 Example for setting an expiration of a whitelist
 
 **Request**
 ```http
-PUT https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
+PUT https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
 Content-type: application/json
 
 {
@@ -63,7 +64,7 @@ Example for removing an expiration of a whitelist
 
 **Request**
 ```http
-PUT https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
+PUT https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
 Content-type: application/json
 
 {
@@ -79,7 +80,7 @@ Example for updating the whitelist value of an email domain whitelist
 
 **Request**
 ```http
-PUT https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
+PUT https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
 Content-type: application/json
 
 {
@@ -102,7 +103,7 @@ An example of this is shown below.
 
 **Errorneous Request**
 ```http
-PUT https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/nonexistentwhitelistid
+PUT https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/nonexistentwhitelistid
 ```
 **Errorneous Response**
 ```http

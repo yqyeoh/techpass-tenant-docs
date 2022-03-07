@@ -112,11 +112,13 @@ The response status would either be `207 Multi Status` or `400 Bad Request`. If 
 
 ## Usage Examples
 
+?> Refer to the [Endpoints](/otpaas/whitelist-automation-api/intro?id=endpoints) section to view the staging and production Automation API endpoints.
+
 Example for adding only email domains
 
 **Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {
@@ -156,7 +158,7 @@ Example for adding only user emails
 
 **Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {
@@ -195,7 +197,7 @@ Example for adding both email domains and user emails
 
 **Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {
@@ -254,7 +256,7 @@ Example for adding email domains with expiry
 
 **Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {
@@ -301,7 +303,7 @@ An example of such an error response is shown below:
 
 **Errorneous Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {
@@ -333,7 +335,7 @@ An example of such an error response is shown below:
 
 **Errorneous Request**
 ```http
-POST https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists
+POST https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists
 Content-type: application/json
 
 {

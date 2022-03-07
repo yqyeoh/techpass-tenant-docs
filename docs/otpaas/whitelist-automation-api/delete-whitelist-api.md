@@ -32,11 +32,13 @@ No response body is returned for this API.
 
 ## Usage Examples
 
+?> Refer to the [Endpoints](/otpaas/whitelist-automation-api/intro?id=endpoints) section to view the staging and production Automation API endpoints.
+
 Example for deleting a whitelist
 
 **Request**
 ```http
-DELETE https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
+DELETE https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/f64a12fb-8952-4b99-80ce-0052d42a3362
 
 ```
 **Response**
@@ -51,7 +53,7 @@ An example of this is shown below.
 
 **Errorneous Request**
 ```http
-DELETE https://api.stg.techpass.suite.gov.sg/otp/namespace/example_namespace/apps/example_app_id/whitelists/nonexistentwhitelistid
+DELETE https://{automation_api_endpoint}/otp/namespace/example_namespace/apps/example_app_id/whitelists/nonexistentwhitelistid
 ```
 **Errorneous Response**
 ```http
