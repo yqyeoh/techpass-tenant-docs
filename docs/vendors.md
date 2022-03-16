@@ -26,10 +26,12 @@ You can then proceed to add the vendor as a [co-admin](namespaces#Managing-Tenan
 1. There are 3 possible SEED status:
    - <strong>Not Required</strong> - user has not been assigned SEED licenses
    - <strong>License Assigned</strong> - user has been assigned SEED licenses but has yet to onboard their device to SEED
-   - <strong>Fully Onboarded </strong> - user has been fully onboarded to SEED.     
+   - <strong>Fully Onboarded</strong> - user has been fully onboarded to SEED.     
 
 2. User will need to have the necessary SEED licenses assigned to them before they can onboard their device to SEED.
 
 3. To request for SEED licenses on behalf of vendor, click on the edit icon beside the vendor row.
+![vendors](assets/images/vendor/vendors.png)
 
-3. Click on 'Request for SEED' (button will be displayed if SEED Status is 'Not Required'). This will assign user with the necessary SEED licenses and send a SEED onboarding email to them. User will need to follow the instructions in the email to onboard their device to SEED.
+4. Click on 'Request for SEED' (button will be displayed if SEED Status is 'Not Required'). This will assign user with the necessary SEED licenses and send a SEED onboarding email to them. User will need to follow the instructions in the email to onboard their device to SEED.
+![vendor_request_seed](assets/images/vendor/request_seed.png)
