@@ -118,12 +118,10 @@ We will be implementing a change to the `scope` parameter in the request for acc
 
 To ease the transition, this change will be backward compatible (i.e. we will continue to accept access token with `scope` value of `https://graph.microsoft.com/.default`) for **2 months** from the Change Effective Date, after which this will become a breaking change where only `{automation_api_endpoint}/.default` will be accepted.
 
-| Environment | Change Effective Date |
-| ----------- | ----------------------|
-| STG         | 20 Jul 2022           |
-| PROD        | TBA                   |
-
-We will further announce the actual date where this will be made a breaking change closer to the end of the 2 months.
+| Environment | Change Effective Date | Backward Compatible Until |
+| ----------- | ----------------------|---------------------------|
+| STG         | 20 Jul 2022           | 20 Sep 2022               |
+| PROD        | TBA                   | TBA                       |
 
 Refer to [Example cURL Usage](#example-curl-usage) on how to specify the `scope` in your request for access token.
 
