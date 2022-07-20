@@ -114,16 +114,58 @@ Output
 }
 ```
 ## Change In Access Token Scope
-We will be implementing a change to the `scope` parameter in the request for access token. You are required to change the `scope` parameter value from `https://graph.microsoft.com/.default` to `{automation_api_endpoint}/.default` (refer to [Endpoints](#Endpoints) for the Automation API Endpoints). 
+We will be implementing a change to the **scope** parameter in the request for access token. You are required to change the **scope** parameter value from `https://graph.microsoft.com/.default` to `{automation_api_endpoint}/.default` (refer to [Endpoints](#Endpoints) for the Automation API Endpoints). 
 
-To ease the transition, this change will be backward compatible (i.e. we will continue to accept access token with `scope` value of `https://graph.microsoft.com/.default`) for **2 months** from the Change Effective Date, after which this will become a breaking change where only `{automation_api_endpoint}/.default` will be accepted.
+To ease the transition, this change will be backward compatible (i.e. we will continue to accept access token with **scope** value of `https://graph.microsoft.com/.default`) for **2 months** from the Change Effective Date, after which this will become a breaking change where only `{automation_api_endpoint}/.default` will be accepted.
 
 | Environment | Change Effective Date | Backward Compatible Until |
 | ----------- | ----------------------|---------------------------|
 | STG         | 20 Jul 2022           | 20 Sep 2022               |
 | PROD        | TBA                   | TBA                       |
 
-Refer to [Example cURL Usage](#example-curl-usage) on how to specify the `scope` in your request for access token.
+Refer to [Example cURL Usage](#example-curl-usage) on how to specify the **scope** in your request for access token.
+
+## Validating Access Token
+This is only applicable for the new [change](#Change-In-Access-Token-Scope) in **scope** parameter.
+
+Upon receiving the access token, you should check for 2 things:
+* **token signature**
+
+  1. parse the JWT access token and make note of the **kid** value. The algorithm in used is **RS256**
+      ```
+      {
+        "typ": "JWT",
+        "alg": "RS256",
+        "kid": "GvnPApfWMdLRi8PDmisFn7bprKg"
+      }
+      ```
+
+  2. Make a GET call to https://login.microsoftonline.com/{DirectoryID}/discovery/v2.0/keys. 
+      * For **Directory ID**, please refer to the [How To Get The Directory/Tenant ID](/apis/tenant-id.md).  
+  
+  3. Parse the results returned from **/keys** endpoint and find the record matching **kid** value. Extract the **x5c** value then enclose the string in the BEGIN CERTIFICATE / END CERTIFICATE block. This will form the public key used to verify the signature. For instance, using the NPM package [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), you can do it like this:
+  ```
+    import jwt = require('jsonwebtoken');
+
+    const x5c= getX5CValue() // refer step 1-3 above
+    
+    const decodedValidToken = (accessToken: string, x5c: string) => {
+      const key: string = `-----BEGIN CERTIFICATE-----\n${x5c}\n-----END CERTIFICATE-----`;
+
+      // decode & verify token
+      return jwt.verify(accessToken, key);
+    }
+
+    const authorizationHeader: string = req.headers.authorization;
+    const decodedToken = (decodedValidToken(authorizationHeader.replace('Bearer ','')) as any);
+  ```
+
+  The token signature is considered valid if no errors were thrown and you got a token back.
+
+  If errors were thrown, you can check for specific issues with the validation process, as documented in the jsonwebtoken NPM package: [Errors & Codes](https://github.com/auth0/node-jsonwebtoken#errors--codes)
+
+* **'aud' claim**  
+  Check that the **aud** claim of the decoded token points to [Automation API Endpoint](#Endpoints)
 
 ## Endpoints
 | Environment | Automation API Endpoint         |
