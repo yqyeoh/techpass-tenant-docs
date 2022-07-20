@@ -116,7 +116,7 @@ Output
 ## Change In Access Token Scope
 We will be implementing a change to the **scope** parameter in the request for access token. You are required to change the **scope** parameter value from `https://graph.microsoft.com/.default` to `{automation_api_endpoint}/.default` (refer to [Endpoints](#Endpoints) for the Automation API Endpoints). 
 
-To ease the transition, this change will be backward compatible (i.e. we will continue to accept access token with **scope** value of `https://graph.microsoft.com/.default`) for **2 months** from the Change Effective Date, after which this will become a breaking change where only `{automation_api_endpoint}/.default` will be accepted.
+To ease the transition, this change will be backward compatible (i.e. we will continue to accept access token with `scope` value of `https://graph.microsoft.com/.default`) for **2 months** from the Change Effective Date. This will become a breaking change after that period, where only `{automation_api_endpoint}/.default` will be accepted.
 
 | Environment | Change Effective Date | Backward Compatible Until |
 | ----------- | ----------------------|---------------------------|
